@@ -385,6 +385,16 @@ body {
     align-items: center;
   }
 }
+@media (min-width: 768px) {
+  .header .hotel-search__content .departure {
+    border-right-width: 0;
+  }
+}
+@media (min-width: 1170px) {
+  .header .hotel-search__content .departure {
+    border-right-width: 1px;
+  }
+}
 @media (min-width: 1170px) {
   .header .hotel-search__content .departure .date-select__wrapper {
     padding-left: 1.5rem;
@@ -420,7 +430,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #333333;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
 }
 .header #extend-icon::before {
   content: "v";
@@ -566,7 +577,7 @@ body {
 
 .footer {
   background-color: #2C4664;
-  padding: 4.75rem 0 5rem 0;
+  padding: 3.75rem 0 5rem 0;
 }
 @media (min-width: 768px) {
   .footer {

@@ -138,6 +138,14 @@
             }
 
             .departure {
+                @include tablet{
+                    border-right-width: 0;
+                }
+
+                @include desktop {
+                    border-right-width: 1px;
+                }
+
                 .date-select__wrapper {
                     @include desktop {
                         padding-left: 1.5rem;
@@ -177,7 +185,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid $color-black-medium;
+        border: 1px solid $color-white-transparent-10;
+        box-shadow: 10px 10px 20px $color-white-transparent-10;
 
         &::before {
             content: 'v';
@@ -335,7 +344,7 @@
 // footer area
 .footer{
     background-color: $color-blue-dark;
-    padding: 4.75rem 0 5rem 0;
+    padding: 3.75rem 0 5rem 0;
 
     @include tablet {
         padding: 3rem 0;
