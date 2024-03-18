@@ -1,0 +1,33 @@
+.burger__wrapper {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    label {
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    ul {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: $color-blue-dark;
+        padding-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    #burger:checked+ul {
+        display: block;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}

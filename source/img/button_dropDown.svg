@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-button_dropDown">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="button_dropDown" clip-path="url(#clip-button_dropDown)">
+    <g id="down">
+      <circle id="Oval" cx="24" cy="24" r="24" fill="#fff"/>
+      <path id="Path" d="M0,1.509,1.414,0,6,4.981,10.585,0,12,1.509,6,8Z" transform="translate(18 22)" fill="#333"/>
+    </g>
+  </g>
+</svg>

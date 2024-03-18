@@ -1,0 +1,97 @@
+.date-select {
+    position: relative;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid $color-black-medium;
+    width: 100%;
+
+    @include tablet {
+        width: 50%;
+        border-right: 1px solid $color-black-medium;
+    }
+
+    @include desktop {
+        width: unset;
+        border-bottom: none;
+        padding: 1.5rem 0;
+    }
+
+    &__wrapper {
+        padding: 0 0 0 0.5rem
+    }
+
+    label {
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 1.75rem;
+        color: $color-white-transparent-49;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include desktop {
+            text-align: left;
+        }
+    }
+
+    &__input {
+        position: absolute;
+        display: block;
+        left: 90px;
+        top: 90px;
+
+        @include tablet {
+            left: 50%;
+            top: 60%;
+        }
+
+        @include desktop {
+            left: 90px;
+            top: 90px;
+            bottom: 28px;
+            right: 0;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__info {
+        @include tablet {
+            justify-content: center;
+        }
+
+        @include desktop {
+            justify-content: flex-start;
+        }
+    }
+
+    &__date {
+        font-size: 3.5rem;
+        margin-right: 1.375rem;
+    }
+
+    &__month {
+        font-size: 1.125rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    &__day {
+        font-size: 0.875rem;
+        width: 60px;
+        color: $color-white-transparent-49
+    }
+
+    &__trigger-btn {
+        background-color: $color-blue-dark;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}

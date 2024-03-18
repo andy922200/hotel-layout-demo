@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-button_minus">
+      <rect width="12" height="12"/>
+    </clipPath>
+  </defs>
+  <g id="button_minus" clip-path="url(#clip-button_minus)">
+    <text id="_-" data-name="-" transform="translate(2 12)" fill="#fff" font-size="24" font-family="Helvetica-Light, Helvetica" font-weight="300"><tspan x="0" y="0">-</tspan></text>
+  </g>
+</svg>

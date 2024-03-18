@@ -1,0 +1,429 @@
+@import 'variables.scss';
+@import 'default';
+@import 'mixin';
+
+// Components
+@import './components/card';
+@import './components/navbar';
+@import './components/burger';
+@import './components/date-select';
+@import './components/count-select';
+
+// header area
+.header {
+    position: relative;
+    background-image: url('../img/image_background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-white;
+
+    #sign-up-btn {
+        background-color: transparent;
+        border: 1px solid $color-white;
+        margin: 0 0.75rem 0 0;
+        padding: 1rem 1.75rem;
+        border-radius: 2rem;
+        text-align: center;
+        display: inline-block;
+        color: $color-white;
+        cursor: pointer;
+        font-size: 1rem;
+
+        @include desktop {
+            margin: 1rem 0 0 0;
+            padding: 1rem 3.25rem;
+        }
+    }
+
+    .hotel-info{
+        &__wrapper{
+            padding: 56px 0 0 0;
+            
+            @include tablet {
+                text-align: center;
+            }
+        
+            @include desktop {
+                text-align: left;
+                padding-top: 150px;
+            }
+        }
+
+        &__title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        
+            @include desktop {
+                font-size: 4.5rem;
+            }
+        
+            span {
+                display: block;
+        
+                @include tablet {
+                    display: inline-block;
+                }
+        
+                @include desktop {
+                    display: block;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 1.625rem 0;
+        }
+
+        &__social-icons {
+            padding: 1.25rem 0;
+            display: flex;
+        
+            @include tablet {
+                justify-content: center;
+            }
+        
+            @include desktop {
+                justify-content: flex-start;
+            }
+        }
+
+        &__social-icon {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $color-white;
+            margin: 0 0.5rem;
+            border: 1px solid $color-white;
+            border-radius: 50%;
+        }
+    }
+
+    .hotel-search{
+        &__wrapper{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2.75rem 0 5rem 0;
+            height: 400px;
+        
+            @include tablet {
+                height: 500px;
+            }
+        
+            @include desktop {
+                height: auto;
+            }
+        }
+
+        &__content{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border-radius: 1rem;
+            padding: 0;
+            background-color: $color-blue-dark;
+        
+            @include desktop {
+                padding: 0 1rem;
+                align-items: center;
+            }
+
+            .departure {
+                .date-select__wrapper {
+                    @include desktop {
+                        padding-left: 1.5rem;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .check-availability__wrapper {
+                padding: 3rem 0;
+                margin: 0 auto;
+
+                @include desktop {
+                    padding: 0;
+                }
+            }
+
+            .extend-icon__wrapper {
+                position: absolute;
+                left: 50%;
+                bottom: -3rem;
+                transform: translate(-50%, -50%);
+
+                @include desktop {
+                    left: 48%;
+                }
+            }
+        }
+    }
+
+    #extend-icon {
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        background-color: $color-white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-black-medium;
+
+        &::before {
+            content: 'v';
+            position: absolute;
+            font-size: 1rem;
+            color: $color-black-medium;
+        }
+    }
+
+    #check-availability {
+        background-color: $color-green-light;
+        color: $color-black-medium;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+// main area
+.main{
+    padding-top: 330px;
+    padding-bottom: 150px;
+    background-color: $color-background-light;
+
+    @include tablet{
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+
+    @include desktop {
+        padding-top: 128px;
+        padding-bottom: 160px;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0 0 1.625rem 0;
+        width: 75%;
+
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include desktop {
+            width: 60%;
+            text-align: left;
+        }
+    }
+
+    &__subtitle{
+        font-size: 1.125rem;
+        line-height: 2rem;
+        margin: 0 0 1.625rem 0;
+        width: 85%;
+        color:$color-black-medium-transparent-50;
+
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include desktop {
+            width: 70%;
+            text-align: left;
+        }
+    }
+
+    &__wrapper{
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+    &__half{
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    .about-us__wrapper{
+        margin-bottom: 5rem;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include desktop {
+            text-align: left;
+        }
+
+        #about-us {
+            padding: 1rem 2.375rem;
+            border: 1px solid $color-black-medium-transparent-50;
+            border-radius: 2rem;
+            background-color: transparent;
+        }
+    }
+
+    .demo-card{
+        max-width: 570px;
+        margin: 0 auto;
+
+        .card__wrapper{
+            padding: 0 10px;
+        }
+
+        .card__img-wrapper {
+            height: 440px;
+        }
+
+        .card__img{
+            object-fit: none;
+            object-position: top;
+            width: 100%;
+        }
+
+        .custom-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .play-icon{
+            &__img-wrapper{
+                margin-right: 1rem;
+            }
+
+            &__info{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: calc(100% - 96px);
+            }
+
+            &__action{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                width: 100%;
+            }
+
+            &__duration{
+                color: $color-black-medium-transparent-50;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+// footer area
+.footer{
+    background-color: $color-blue-dark;
+    padding: 4.75rem 0 5rem 0;
+
+    @include tablet {
+        padding: 3rem 0;
+    }
+
+    @include desktop {
+        padding: 5.875rem 0;
+    }
+
+    &__wrapper {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+
+    &__half:nth-child(1) {
+        @include tablet {
+            width: 75%;
+        }
+    }
+
+    &__half:nth-child(2) {
+        @include tablet {
+            width: 25%;
+            padding-right: 0.625rem;
+        }
+    }
+
+    &__title{
+        margin: 0 0 1.125rem 0;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        color: $color-white;
+
+        @include desktop {
+            margin-bottom: 2.75rem;
+        }
+    }
+
+    &__infos{
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__info{
+        font-size: 1.125rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+
+        i,img{
+          margin-right: 1rem;  
+        }
+
+        &--light{
+            color: $color-white-transparent-49;
+        }
+
+        @include desktop {
+            margin-right: 1.875rem;
+        }
+    }
+
+    &__subscribe{
+        margin: 4rem 0 1.5rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $color-white;
+
+        @include tablet {
+            margin-top: 0;
+        }
+
+        @include desktop {
+            margin-bottom: 1.125rem;
+        }
+    }
+
+    &__email-input{
+        padding: 0.75rem 1rem;
+        margin-bottom: 1.125rem;
+        width: 100%;
+    }
+
+    &__extra{
+        color: $color-white-transparent-49;
+        font-size: 0.875rem;
+    }
+}

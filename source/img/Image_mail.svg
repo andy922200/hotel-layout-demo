@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-Image_mail">
+      <rect width="18" height="18"/>
+    </clipPath>
+  </defs>
+  <g id="Image_mail" clip-path="url(#clip-Image_mail)">
+    <path id="Shape" d="M18,14H0V0H18V14Zm-1.5-1.556V1.555H1.5l7.52,5.791L16.5,1.556,12.751,6.23Zm-15,0h15L11.606,7.3,9.022,10.006,6.458,7.265,1.5,12.444,5.288,6.223,1.5,1.556Z" transform="translate(0 2)" fill="#fff"/>
+  </g>
+</svg>

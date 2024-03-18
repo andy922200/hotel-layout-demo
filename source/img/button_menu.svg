@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-button_menu">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="button_menu" clip-path="url(#clip-button_menu)">
+    <g id="menu">
+      <g id="Oval" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" opacity="0.305">
+        <circle cx="24" cy="24" r="24" stroke="none"/>
+        <circle cx="24" cy="24" r="23.5" fill="none"/>
+      </g>
+      <path id="Combined_Shape" data-name="Combined Shape" d="M0,12V10H12v2ZM0,7V5H12V7ZM0,2V0H12V2Z" transform="translate(18 18)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
